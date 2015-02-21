@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>polymer-search Demo</title>
+
+  <script src="../webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="polymer-search.html">
+</head>
+<body unresolved style="background-color: #E91E63;">
+
+  <template id="auto-bind-data" is="auto-binding">
+    <polymer-search language="de-DE" resultelements="{{resultelements}}" searchvalue="{{searchval}}" selectedelements={{selected}}>
+    </polymer-search>
+    <p>{{searchval}}</p>
+    <p>{{selected}}</p>
+  </template>
+
+  <script>
+    var t = document.querySelector('#auto-bind-data');
+    t.resultelements = [{_id: '123123', icon: 'history', title: 'test1'}, {_id: '44444', icon: 'search', title: 'test2'}];
+    t.searchval = '';
+    t.selected = [];
+  </script>
+</body>
+</html>
