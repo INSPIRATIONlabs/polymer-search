@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 seed-element
 ============
 
@@ -31,3 +32,7 @@ The tests are also compatible with [web-component-tester](https://github.com/Pol
 npm install -g web-component-tester
 wct
 ```
+=======
+# polymer-search
+Search field written in Polymer
+>>>>>>> 5c77009615efb77a97a7399eaf1419d8236ae187
